@@ -12,15 +12,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var theLabel: UILabel!
     
-    var tapCount = 0
+    var tapCount1 = 0
+    var tapCount2=0
     @IBAction func btnChangeText(_ sender: Any) {
-           theLabel.text="Different String"    }
+           theLabel.text="Different String"
+        tapCount1 = tapCount1+1
+        
+        print("Button 1 " + String(tapCount1))
+        // Console print
+              }
+    
     
     @IBAction func btnResetText(_ sender: Any) {
            theLabel.text="Variable String"
-        tapCount = tapCount+1
+        tapCount2 = tapCount2+1
         
-        print("Text Reset" + String(tapCount))
+        print("Button 2 " + String(tapCount2))
         // Console print
     }
     
